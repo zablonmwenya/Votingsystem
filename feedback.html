@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BSEC Voting</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+
+  </head>
+  <body>
+	
+    <div class="container">
+      <nav class="navbar navbar-default navbar-fixed-top navbar-inverse
+      " role="navigation">
+        <div class="container">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-header">
+            
+            <a href="index.html" class="navbar-brand headerFont text-lg"><strong>Digital Voting System</strong></a>
+          </div>
+  
+        </div> 
+        <!-- end of container -->
+      </nav>
+
+    <div class="container" style="padding:100px;">
+      <div class="row">
+        <center><h2 class="specialHead">Contuct Us</h2>
+            <p class="normalFont"> If You have any suggestion or complain regarding our voting system. We'll welcome your suggestion,
+            </p>
+          </center>
+        <div class="col-sm-12" style="border:2px solid gray;">
+          
+          
+          
+          <form action="feedback.php" method="POST">
+          <div class="form-group">
+            
+
+              <h4>If you have specific feedback, please write to us...</h4>
+              <input type="text" placeholder="Your Name" name="name" required /><br> <br>
+			        <input type="email" placeholder="Your Email" name="email" required/><br><br>
+			        <input type="text" placeholder="Your Number" name="num" required /><br><br>
+			        <textarea placeholder="Message" class="form-control" name="comments" required=""></textarea><br><br>
+			        
+              <h4 class="normalFont">How satisfied were you with our Service?,</h4>
+            <div class="radio" required>
+              <label for="excellent">
+                <input type="radio" name="view" value="excellent" id="excellent"> <strong>Excellent</strong>
+              </label><br>
+
+              <label for="good">
+                <input type="radio" name="view" value="good" id="good"> <strong>Good</strong> 
+              </label><br>
+              
+              <label for="neutral">
+                <input type="radio" name="view" value="neutral" id="neutral"> <strong>Neutral</strong>
+              </label><br>
+
+              <label for="poor">
+                <input type="radio" name="view" value="poor" id="poor"> <strong>Poor</strong>
+              </label><br>
+              <br><hr>
+              <button type="submit" name="submit" class="btn btn-primary"><strong>Submit Feedback</strong></button>
+            </div>
+          </div>
+          </form>
+
+        </div>
+        
+      </div>
+    </div>
+  </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
